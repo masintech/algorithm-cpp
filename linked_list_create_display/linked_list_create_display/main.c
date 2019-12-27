@@ -52,12 +52,49 @@ void RDisplay(struct Node *p)
 }
 
 
+int count(struct Node *p)
+{
+    int l=0;
+    while(p)
+    {
+        l++;
+        p=p->next;
+    }
+    return l;
+}
 
+int Rcount(struct Node *p)
+{
+    if (p!=NULL)
+        return Rcount(p->next)+1;
+    else
+        return 0;
+}
 
+int sum(struct Node *p)
+{
+    int s=0;
+    while(p!=NULL)
+    {
+        s+=p->data;
+        p=p->next;
+    }
+    return s;
+}
+
+int Rsum (struct Node *p)
+{
+    if(p!=NULL)
+        return Rsum(p->next)+p->data;
+    else
+        return 0;
+  
+}
 int main(int argc, const char * argv[]) {
-    struct Node *temp;
     int A[] ={3,5,7,10,24,29,33,45};
     create(A,8);
+    printf("Length is %d\n\n",Rcount(first));
+    printf("Sum is %d\n\n",Rsum(first));
     Display(first);
     return 0;
 }
