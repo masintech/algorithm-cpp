@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/david/image_cpp/algorithm-cpp/Vec2D/Vec_cmake/Utils/Utils.h
+string
+-
+
+/home/david/image_cpp/algorithm-cpp/Vec2D/Vec_cmake/Utils/Vec2D.cpp
+Vec2D.h
+/home/david/image_cpp/algorithm-cpp/Vec2D/Vec_cmake/Utils/Vec2D.h
+Utils.h
+/home/david/image_cpp/algorithm-cpp/Vec2D/Vec_cmake/Utils/Utils.h
+cassert
+-
+cmath
+-
+
+/home/david/image_cpp/algorithm-cpp/Vec2D/Vec_cmake/Utils/Vec2D.h
+iostream
+-
+

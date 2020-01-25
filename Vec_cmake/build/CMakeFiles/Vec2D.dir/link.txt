@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libVec2D.so -o ../lib/libVec2D.so CMakeFiles/Vec2D.dir/Utils/Vec2D.cpp.o  -Wl,-rpath,/home/david/image_cpp/algorithm-cpp/Vec2D/Vec_cmake/lib ../lib/libUtils.so 
